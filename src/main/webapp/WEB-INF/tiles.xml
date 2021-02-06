@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="cp1251"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+    <!-- Base Define -->
+    <definition name="base.definition"
+                template="/WEB-INF/layouts/classic.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/components/header.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/components/footer.jsp" />
+    </definition>
+
+    <!-- AUTH Page  -->
+    <definition name="loginPage" extends="base.definition">
+        <put-attribute name="title" value="login" />
+        <put-attribute name="body" value="/WEB-INF/components/login.jsp" />
+    </definition>
+
+    <!-- REGISTRATION Page  -->
+    <definition name="registerPage" extends="base.definition">
+        <put-attribute name="title" value="registration" />
+        <put-attribute name="body" value="/WEB-INF/components/registration.jsp" />
+    </definition>
+
+    <!-- REGISTRATION Page  -->
+    <definition name="lkPage" extends="base.definition">
+        <put-attribute name="title" value="lk" />
+        <put-attribute name="body" value="/WEB-INF/components/lk.jsp" />
+    </definition>
+
+
+</tiles-definitions>
